@@ -1,0 +1,24 @@
+{
+  "name": "application-b",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve dist -p 3002",
+    "build": "webpack --mode production",
+    "dev": "concurrently \"webpack --watch\" \"serve dist -p 3002\""
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-react": "latest",
+    "babel-loader": "latest",
+    "concurrently": "latest",
+    "html-webpack-plugin": "latest",
+    "serve": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest"
+  }
+}
